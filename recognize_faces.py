@@ -40,3 +40,8 @@ for face_encoding, face_location in zip(encodings, locations):
     top, right, bottom, left = face_location
     cv2.rectangle(image, (left, top), (right, bottom), (255, 0, 0), 2)
     cv2.putText(image, name(left,top-10), cv2.FONT_HERSHEY_SCRIPT_SIMPLEX, 0.6, (255, 25, 255), 2)
+
+
+cv2.imshow(filename, image)
+cv2.waitKey[0]
+cv2.destroyWindow(filename)
